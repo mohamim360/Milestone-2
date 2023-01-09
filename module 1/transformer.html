@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .trans{
+      display: flex;
+      gap: 100px;
+    }
+    .container,.inner1,.inner2,.inner3,.inner4,.inner5{
+      width: 150px;
+      height: 150px;
+      border: 3px solid royalblue;
+      
+    }
+    .container{
+      background-color: aqua;
+    }
+    .inner1{
+      background-color: darkorange;
+      transform: scale(0.5);
+    }
+    .inner2{
+      display: n;
+      background-color: darkorange;
+      transform:rotate(-45deg);
+    }
+    .inner3{
+      background-color: darkorange;
+      /* transform:translateX(-70px); */
+      transform:translate(70px);
+    }
+    .inner4{
+      background-color: darkorange;
+      transform: scale(0.6) rotate(50deg);
+    }
+    .inner5{
+      background-color: darkorange;
+      transform: scale(0.6) rotate(50deg) translate(10px,180px);
+    }
+
+  </style>
+</head>
+<body>
+  <section class="trans">
+    <div>
+      <h1>transformer:scale();</h1>
+      <div class="box container">
+        <div class="inner1">trans 1</div>
+      </div>
+      <div class="box container">
+        <div class="inner1">trans 2</div>
+      </div>
+      <div class="box container">
+        <div class="inner1">trans 3</div>
+      </div>
+    </div>
+
+    <div>
+      <h1>transformer:rotate();</h1>
+      <div class="box container">
+        <div class="inner2">trans 1</div>
+      </div>
+      <div class="box container">
+        <div class="inner2">trans 2</div>
+      </div>
+      <div class="box container">
+        <div class="inner2">trans 3</div>
+      </div>
+    </div>
+
+    <div>
+      <h1>transformer:translate();</h1>
+      <div class="box container">
+        <div class="inner3">trans 1</div>
+      </div>
+      <div class="box container">
+        <div class="inner3">trans 2</div>
+      </div>
+      <div class="box container">
+        <div class="inner3">trans 3</div>
+      </div>
+    </div>
+
+    <div>
+      <h1>transform: scale() rotate();</h1>
+      <div class="box container">
+        <div class="inner4">trans 1</div>
+      </div>
+      <div class="box container">
+        <div class="inner4">trans 2</div>
+      </div>
+      <div class="box container">
+        <div class="inner4">trans 3</div>
+      </div>
+    </div>
+
+    <div>
+      <h1>transform: scale() rotate() translate();</h1>
+      <div class="box container">
+        <div class="inner5">trans 1</div>
+      </div>
+      <div class="box container">
+        <div class="inner5">trans 2</div>
+      </div>
+      <div class="box container">
+        <div class="inner5">trans 3</div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
