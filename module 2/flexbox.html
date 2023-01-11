@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+</head>
+<style>
+  /* N */
+  .container{
+    display: flex;
+    border: 3px dotted darkblue;
+    justify-content: space-between;
+    
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed rebeccapurple;
+  }
+/* A */
+  .containerA{
+    display: flex;
+    border: 3px dotted darkblue;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: stretch; */
+  }
+  .boxA{
+    width: 100px;
+    border: 3px dashed rebeccapurple;
+
+  }
+  #idA{
+   
+    flex-grow: 1;
+  }
+  /* B */
+  .containerB{
+    display: flex;
+    border: 3px dotted darkblue;
+    height: 200px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+  .boxB{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed rebeccapurple;
+  }
+</style>
+
+<body>
+  <p>justify-content</p>
+  <div class="container">
+    <div class="box">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+  </div>
+  <p>align-items</p>
+  <div class="containerA">
+    <div id="idA" class="boxA">box-1</div>
+    <div class="boxA">box-2</div>
+    <div class="boxA">box-3</div>
+
+  </div>
+<p>wrap</p>
+  <div class="containerB">
+    <div class="boxB">box-1</div>
+    <div class="boxB">box-2</div>
+    <div class="boxB">box-3</div>
+    <div class="boxB">box-1</div>
+    <div class="boxB">box-2</div>
+    <div class="boxB">box-3</div>
+    <div class="boxB">box-1</div>
+    <div class="boxB">box-2</div>
+    <div class="boxB">box-3</div>
+    <div class="boxB">box-1</div>
+    <div class="boxB">box-2</div>
+    <div class="boxB">box-3</div>
+    <div class="boxB">box-1</div>
+    <div class="boxB">box-2</div>
+    <div class="boxB">box-3</div>
+    <div class="boxB">box-1</div>
+    <div class="boxB">box-2</div>
+    <div class="boxB">box-3</div>
+    
+  </div>
+</body>
+
+</html>
