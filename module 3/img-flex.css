@@ -1,0 +1,32 @@
+img{
+  height: 100%;
+  width: 100%;
+}
+.A{
+  height: 400px;
+  margin-bottom: 5px;
+}
+.middle,.last{
+  display: flex;
+ 
+  gap: 5px;
+}
+.middle>div{
+  flex: 1;
+}
+.DE{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.DE div{
+  height: calc(50% - 5px/2);
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5px;
+}
+.last >div{
+  flex: 1;
+}
