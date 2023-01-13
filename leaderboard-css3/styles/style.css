@@ -1,14 +1,40 @@
-/* players */
-.players{
-  display: grid;
-  grid-template-columns:repeat(3,1fr) ;
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+/* common style */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f1ff;
 }
-.player{
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 870px;
+  background-color: white;
+  padding: 30px;
+}
+
+/* players */
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  font-family: "Poppins";
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player {
   display: flex;
   align-items: center;
 }
-.player img{
+.player img {
   width: 56px;
   height: 56px;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
 }
