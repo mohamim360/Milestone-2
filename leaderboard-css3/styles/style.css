@@ -75,13 +75,31 @@ hr {
 }
 
 /* courses */
+.courses{
+  display: flex;
+  gap: 23px;
+  justify-content: space-between;
+}
+.course{
+  width: 252.42px;
+  height: 269.79px;
+  border: 1px solid black;
+  border-radius:10px ;
+}
 .course-info{
   display: flex;
-  
+  justify-content: space-between;
 }
 .course-banner img {
   width: 224px;
   height: 104px;
+}
+.course-rating{
+  display: flex;
+  gap: 10px;
+}
+.fa-star{
+  font-size: 12px;
 }
 .fa-star.full{
 color: #FFC014;
