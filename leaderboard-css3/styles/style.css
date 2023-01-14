@@ -76,9 +76,9 @@ hr {
 
 /* courses */
 .courses{
-  display: flex;
+  display: grid;
   gap: 23px;
-  justify-content: space-between;
+  grid-template-columns: repeat(3,1fr);
 }
 .course{
   width: 252.42px;
@@ -106,4 +106,32 @@ color: #FFC014;
 }
 .fa-star.null{
   color: #AEAEAE;
+}
+@media only screen and (max-width:688px) {
+  .container{
+    width: 100%;
+  }
+  .players,.blogs,.courses{
+    background-color: red;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .player,.blog{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px){
+  .container{
+    width: 100%;
+  }
+  .players,.courses{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+  }
+  .blogs{
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+  }
+
+  
 }
